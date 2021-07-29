@@ -6,7 +6,7 @@ function Slider() {
   const fadeImages = ["/banner-1.jpg", "/banner-2.jpg", "/banner-3.jpg"];
   return (
     <div className="slide-container">
-      <Fade duration="3000">
+      <Fade duration={3000}>
         <div className="each-fade">
           <div className="image-container" style={{ height: 200 }}>
             <Image src={fadeImages[0]} layout="fill" objectFit="cover" />

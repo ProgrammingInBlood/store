@@ -12,6 +12,7 @@ import SearchIcon from "@material-ui/icons/Search";
 //TESTINGGG
 
 import { useEffect } from "react";
+import Image from "next/image";
 
 function Navbar() {
   const Router = useRouter();
@@ -57,7 +58,13 @@ function Navbar() {
       {/* ${show && styles.nav_black} */}
       <div className={styles.logo} onClick={goHome}>
         <span className={styles.mainlogo}>
-          <h1>SHOPPING MERN</h1>
+          <Image
+            src="/MERN-logo.png"
+            width="100"
+            height="40"
+            layout="fixed"
+            objectFit="contain"
+          />
         </span>
       </div>
 
